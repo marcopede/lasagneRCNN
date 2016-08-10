@@ -175,11 +175,12 @@ import os
 import scipy.io as sio
 import cv2 as cv
 
-box_file = os.path.join('/home/lear/mpederso/links/wsd', 'data', 'demo',
-                            '000004_boxes.mat')
+#box_file = os.path.join('/home/lear/mpederso/links/wsd', 'data', 'demo','000004_boxes.mat')
+box_file = '000004_boxes.mat'
 obj_proposals = sio.loadmat(box_file)['boxes']
 
-im = cv.imread('/home/lear/mpederso/links/wsd/data/demo/000004.jpg')
+#im = cv.imread('/home/lear/mpederso/links/wsd/data/demo/000004.jpg')
+im = cv.imread('000004.jpg')
 
 CLASSES = ('__background__',
            'aeroplane', 'bicycle', 'bird', 'boat',
